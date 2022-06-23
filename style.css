@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+/* body{
+    background-color: burlywood;
+} */
+
+/* header */
+.page-header{
+    background-color: brown;
+    height: 5vmax;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px rgba(54, 51, 56, 0.534) ;
+    z-index: 9999;
+}
+.header-left{
+    width: 20%;
+    background-color: brown;
+    position: relative;
+}
+.header-left>a img{
+    height: 4vmax;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.header-title{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+#title-left:hover{
+    color: black;
+}
+.header-middle{
+    width: 60%;
+    background-color: blue;
+    position: relative;
+}
+.header-right{
+    width: 20%;
+    background-color: blueviolet;
+    position: relative;
+}
+
+/* main */
+
+/* section-banner */
+
+.section-banner{
+    height: 30vmax;
+    background-image: url("https://www.acervietnam.com.vn/wp-content/uploads/2021/02/acervietnam-laptop-a3-banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center  ;
+    border-bottom: 4px solid rosybrown ;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner-content{
+    margin-left: 50px;
+    width: 30%;
+}
+.text-title{
+    font-size: 54px;
+    text-shadow: 9px 3px rebeccapurple;
+}
+.banner-content-main{
+    padding: 30px 0px;
+}
+.btn{
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: darkcyan;
+    border-radius: 30px;    
+    color: white;
+}
+
+.section-newspager{
+    height: 50vmax;
+    background-color: #ccc;
+}
+
+.page-main{
+    margin-bottom: 50px;
+}
+/* section-newspager */
+
+.section-newspager .text-title{
+   text-align: center;
+   text-shadow: 9px 3px darkkhaki;
+}
+.newspager-content-wrap{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.content-main{
+    width: 70%;
+    height: 100%;
+}
+.content-main-1{
+    height: 50%;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-main-2{
+    height: 50%;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-slidebar{
+    width: 30%;
+    height: 100%;
+    background-color: blueviolet;
+    
+}
+
+.content-slidebar ul{
+    margin-left: 3vmax;
+}
+.title-list{
+    font-size: 30px;
+    color: white;
+    padding: 50px 0;
+}
+.content-slidebar ul  li:last-child,
+.content-slidebar ul  li:nth-child(2){
+    font-weight: bold;
+    list-style: none;
+}
+.square-shape{
+    height: 100px;
+    width: 100px;
+    background-color: sandybrown;
+    position: relative;
+}
+
+.square-shape::before{
+    content: "hello before";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square-shape::after{
+    content: "hello after";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid greenyellow;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  greenyellow;
+}
+
+.form-demo{
+    width: 20vmax;
+}
+.form-demo h3{
+    text-align: center;
+
+}
+ /* example for Attribute Selector */
+input[type=text]{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#confession{
+    width: 100%;
+    resize: none;
+}
+.button-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 8vmax;
+    border: none;
+}
+
+button[type=button]:hover{
+    background-color: khaki;
+}
+
+button[type=reset]:hover{
+    background-color: greenyellow;
+}
+
+
+/* page-footer */
+.page-footer{
+    height: 7vmax;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-footer p{
+    color: antiquewhite;
+}
