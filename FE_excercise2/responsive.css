@@ -1,0 +1,285 @@
+@media only screen and (max-width: 1023px) {
+    /* header*/
+    
+    
+    .header-top {
+        display: none;
+    }
+    .header-content-middle {
+        display: none;
+    }
+    .header-content-left {
+        width: 30%;
+    }
+    .header-content-right {
+        width: 70%;
+    }
+    .menu-item{
+        display: block;
+    }
+    .items-header-right i {
+        font-size: 26px;
+    }
+    .header-content {
+        height: 70px;
+    }
+
+    /* banner slide */
+
+    .slider-1 h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .slider-1 {
+      
+        height: 500px;
+    }
+    .btn-style {
+        padding: 15px 30px 16px;
+    }
+
+    /* banner category*/
+    .slider-category-wrap {
+        flex-wrap: wrap;
+    }
+    .category-img {
+        height: 250px;
+    }
+    .category-card-content span {
+        font-size: 20px;
+
+    }
+    .category-card-content h4 a {
+        font-size: 18px !important;
+    }
+    .category-card-content {
+        margin-bottom: 30px;
+    }
+    .category-img img {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .category-card-content> a {
+        padding: 12px 15px
+    }
+    /*banner section*/
+    .banner-content h3 {
+        font-size: 20px;
+    }
+    .banner-content h4 {
+        font-size: 13px;
+        padding: 10px 0 10px;
+    }
+    .pe-7s-left-arrow {
+        font-size: 20px;
+    }
+
+    /*product section*/
+    .col-3 {
+        width: 50%;
+    }
+    /* section DEALOFDAY */
+    .DealofDay-content .time {
+        justify-content: space-evenly;
+        gap:0;
+    }
+    .time .number {
+        font-size: 40px;
+    }
+    .time .number span {
+        font-size: 20px;
+    }
+
+    /* section-testimonial */
+    .single-testimonial p {
+        font-size: 15px;
+    }
+
+    /* section-subcribe */
+    .section-subcribe-content h2 {
+        font-size: 38px;
+    }
+
+    .section-subcribe-content p{
+        font-size: 15px;
+    }
+    .subcribe-form button{
+        padding: 12px 30px
+    }
+
+    /* footer */
+    .footer-content:first-child {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .col-2 {
+        width: 33.333333333%;
+    }
+    .footer-content{
+        padding: 0 30px ;
+    }
+
+    .page-footer .container .row {
+        justify-content: center;
+    }
+    .page-footer .col-4{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-subcribe-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-subcribe button{
+        margin: 13px 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* header*/
+    .items-header-right {
+        display: none;
+    }
+    .items-header-right:last-child {
+        display: block;
+    }
+
+    /* banner slide */
+    .slider-1 h1 {
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 600 !important;
+    }
+    .slider-1 {
+        height: 300px;
+    }
+    .wrap h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .btn-style {
+        padding: 10px 20px 10px;
+    }
+    .slide-button-prev{
+        left: 40px;
+    }
+    .slide-button-next{
+        right: 40px;
+    }
+
+    /* banner category*/
+    .category-img{
+        height: 150px;
+    }
+    .banner-wrap{
+        flex-wrap: wrap;
+    }
+    .single-banner{
+        max-width:  100%;
+    }
+    /*product section*/
+    .col-3 {
+        width: 100%;
+    }
+
+    /* policy */
+    .all-policy-wrap {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* DealofDay */
+    .img-DealofDay {
+        display: none;
+    }
+    .DealofDay-content {
+        width: 100%;
+    } 
+
+    /* testimonial */
+    .testimonial-wrap {
+        width: 100%;
+    }
+
+    /* subcribe */
+    .section-subcribe-content{
+        width: 100%;
+    }
+
+    /* footer */
+    .footer-content {
+        width: 100%;
+    }
+    .footer-content {
+        text-align: center;
+        
+    }
+    .logo-copyright p, .logo-copyright p a,
+    .footer-subcribe input,
+    .section-subcribe-content p,
+    .subcribe-form input,
+    .subcribe-form button {
+        font-size: 22px;
+    }
+    .footer-title h3 {
+        font-size: 30px;
+    }
+    .footer-list ul li a,
+    .footer-subcribe p,
+    .footer-subcribe button {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    /* header*/
+    
+    
+
+    /* banner slide */
+    .slider-1 h1 {
+        font-size: 20px;
+        line-height: 50px;
+        font-weight: 600 !important;
+    }
+    .slider-1 {
+        height: 300px;
+    }
+    .wrap h3 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .btn-style {
+        padding: 10px 15px 10px;
+    }
+   
+    .section-products-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .product-card-img-action-item button,
+    .single-testimonial p {
+        font-size: 13px;
+    }
+
+    .logo-copyright p, .logo-copyright p a,
+    .footer-subcribe input,
+    .section-subcribe-content p,
+    .subcribe-form input,
+    .subcribe-form button {
+        font-size: 18px;
+    }
+
+    .footer-list ul li a,
+    .footer-subcribe p,
+    .footer-subcribe button {
+        font-size: 20px;
+    }
+}

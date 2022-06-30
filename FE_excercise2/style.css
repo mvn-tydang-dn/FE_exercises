@@ -35,17 +35,20 @@ i{
 
   /* Base */
 /* general */
-.container{
+.container {
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 50px;
     margin: 0 auto;
     height: 100%;
 }
-.row{
+.row {
     height: 100%;
     display: flex;
     flex-wrap: wrap;  
     margin: 0 15px ;
+}
+.col-1{
+    width: 8.333333333%;
 }
 .col-2 {
     width: 16.666666667%;
@@ -58,7 +61,7 @@ i{
     width: 33.333333333%;
 }
 
-.col-5{
+.col-5 {
     width: 41.666666667%;
 }
 
@@ -150,11 +153,12 @@ header{
 
 .header-content-main-menu ul{
     display: flex;
-    line-height: 90px
+    line-height: 90px;
+    flex-wrap: nowrap;
 }
 
 .header-content-main-menu ul li{
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .header-content-main-menu ul li a{
@@ -188,7 +192,7 @@ nav ul li{
 }
 
 .items-header-right i{
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .search-content,
@@ -219,6 +223,10 @@ nav ul li{
 
 .header-right-wrap{
     display: flex;
+    justify-content: flex-end;
+}
+.menu-item{
+    display: none;
 }
 
 /* banner slide */
@@ -298,7 +306,6 @@ nav ul li{
 }
 
 .category-img{
-    width: 270px;
     height: 200px;
     overflow: hidden;
 }
@@ -327,13 +334,13 @@ nav ul li{
     padding: 5px 0;
 }
 
-.category-card-content h4 a{
+.category-card-content h4 a {
     font-size: 16px !important;
     font-weight: 500;
     padding: 5px 0;
 }
 
-.category-card-content> a{
+.category-card-content> a {
     padding: 8px 11px;
     margin-top: 15px;
     border: 1px solid #333;
@@ -344,11 +351,10 @@ nav ul li{
 
 /*banner section*/
 
-.section-banner{
-    
-}
+
 .banner-wrap{
     display: flex;
+    justify-content: center;
 
 }
 
@@ -390,7 +396,7 @@ nav ul li{
 .banner-content h4 {
     font-size: 16px;
     font-weight: 300;
-    padding: 20px 0 40px;
+    padding: 20px 0 30px;
 }
 
 /*product section*/
