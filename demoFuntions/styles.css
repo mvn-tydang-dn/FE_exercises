@@ -1,0 +1,73 @@
+
+table{
+    width: 100%;
+}
+thead tr td{
+box-sizing: border-box;
+   background-color: blueviolet;
+   height: 80px;
+   text-align: center;
+}
+td{
+    width: calc(100% / 7);
+    border-right: 1px solid black ;
+}
+a:after {
+    content: " (" attr(href) ")";
+}
+
+.calc {
+    margin: 0 auto;
+    height: 50px;
+    width: calc(100% - 20px);
+    background-color: brown;
+}
+
+.rgb {
+    margin: 0 auto;
+    height: 50px;
+    width: calc(100% - 20px);
+    background-color:rgb(255,85,87) ;
+
+}
+
+.rgba {
+    margin: 0 auto;
+    height: 50px;
+    width: calc(100% - 20px);
+    background-color: rgba(255,85,87,0.4);
+}
+
+.rotate {
+    margin: 0 auto;
+    height: 50px;
+    width: calc(100% - 20px);
+    background-color: yellowgreen;
+    transform: rotate(45deg);
+}
+.scale {
+    margin: 0 auto;
+    height: 50px;
+    width: calc(100px);
+    background-color: red;
+    position: relative;
+}
+
+.scale::before {
+    content: "scale(2,1.5)";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: calc(100px);
+    background-color: rgba(146, 74, 74, 0.479);
+    transform: scale(2,1.5);
+}
+
+.linear-gradient {
+    margin: 0 auto;
+    height: 50px;
+    width: calc(100% - 20px);
+    background-image: linear-gradient(red, yellowgreen);
+}
