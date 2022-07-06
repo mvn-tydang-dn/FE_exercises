@@ -1,0 +1,31 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.cart h1{
+    color: brown;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid;
+}
+
+td, th {
+    padding: 5px 0;
+}
+
+td{
+    font-weight: 300;
+}
+
+th a {
+    color: black;
+}
