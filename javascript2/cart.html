@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    
+    <div class="main">
+        <header id="header" class="header">
+            <a href="./product.html"><h1>Shopping Cart</h1></a>
+            <div class="iconShopping">
+                <p>0</p>
+                <a href="./cart.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </header>
+	</div>
+    <div class="cartBox">
+        <div class="cart">
+            <h1>Cart</h1>
+            <table >
+                <tr>
+                    <th>S no.</th>
+                    <th>Item Name</th>
+                    <th>Item No</th>
+                    <th>item Price</th>
+                    <th>Action</th>
+                </tr>
+                <tr id="noItem">
+                    <th colspan="5">No items found</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+	
+    <footer class="page-footer">
+        <p>&copy; tydang <time>2022</time></p>
+    </footer>
+    <script>
+        function Delete(e){
+			let Products = [];
+			JSON.parse(localStorage.getItem('Products')).map(data=>{
+				if(data.id != e.parentElement.parentElement.children[0].textContent){
+
+					Products.push(data);
+
+				}
+			});
+			localStorage.setItem('Products',JSON.stringify(Products));
+			window.location.reload();
+		};
+    </script>
+    <script src="./cart.js"></script>
+
+</body>
+</html>
