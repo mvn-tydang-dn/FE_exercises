@@ -41,7 +41,4 @@ window.onload=function(){
         </li>
         `
     }).join('')
-}
-
-
-}
+}}
