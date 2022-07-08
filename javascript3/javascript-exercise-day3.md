@@ -1,5 +1,5 @@
 # Javascript ES6 Exercise
-​
+
 ### Convert the code below from ES5 to ES6 and answer the question
 ​
 1. Define a variable
