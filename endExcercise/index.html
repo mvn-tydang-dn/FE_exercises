@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="img/logoWeb.png"/>
+  <title>End-Excercise of Ty Dang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reponsive.css">
+</head>
+<body>
+  <header class="page-header">
+      <div class="container">
+        <div class="col-2 logo-wrap">
+          <a href="./index.html"><i class="lab la-dev logo" ></i></a>
+        </div>
+        <div class="col-8 header-title-wrap">
+          <h1 class="header-title">My front end courses</h1>
+        </div>
+        <div class="col-2 countCourses-wrap">
+          <p class="header-countCourses"><i class="las la-list  "><span>0</span></i></p>
+        </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <div class="container">
+      <div class="col-3 main-menu">
+        <h2 class="menu-title">
+          Manager list course
+        </h2>
+        <ul class="btnManager">
+          <li class="btnName active" id="btnCreate"><i class="las la-plus-square"></i>Add</li>
+          <li class="btnName" id="btnSearch"><i class="las la-search"></i>Search</li>
+        </ul>
+
+      </div>
+
+      <div class="col-9 main-list">
+        <h2 class="list-title"> My list courses</h2>
+
+        <div class="table-wrap">
+          <table class="styled-table">
+            <thead>
+                <tr>
+                    <th class="col-1">STT</th>
+                    <th class="col-2">Name</th>
+                    <th class="col-3">Thumnail</th>
+                    <th class="col-5" >Description</th>
+                    <th class="col-1">Link</th>
+                    <th class="col-1">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active-row">
+                    <td colspan="6">Bạn chưa thêm khóa học nào!</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+      <!-- modal Create -->
+      <div id="ModalCreate" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Add course to the list</h2>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form">
+              <div class="form-input">
+                <label for="courseName-inputAdd">Course's name:</label>
+                <input type="text" id="courseName-inputAdd" class="input-course">
+              </div>
+              <div class="form-input">
+                <label for="idVideo-inputAdd">Id Video (youtube):</label>
+                <input type="text" id="idVideo-inputAdd" class="input-course">
+              </div>
+              <div class="form-input">
+                <label for="description-inputAdd">Description:</label>
+                <textarea name="description" id="description-inputAdd" cols="30" rows="10"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal" id="submitAdd" ><i class="las la-plus-square"></i> Add Course
+            </button>
+          </div>
+        </div>
+      
+      </div>
+      <!-- modal Edit -->
+      <div id="ModalEdit" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Edit course <span class="couse"></span></h2>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form">
+              <div class="form-input">
+                <label for="courseName-inputEdit">Course's name:</label>
+                <input type="text" id="courseName-inputEdit" class="input-course">
+              </div>
+              <div class="form-input">
+                <label for="idVideo-inputEdit">Id Video (youtube):</label>
+                <input type="text" id="idVideo-inputEdit" class="input-course">
+              </div>
+              <div class="form-input">
+                <label for="description-inputEdit">Description:</label>
+                <textarea name="description" id="description-inputEdit" cols="30" rows="10"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal" id="submitEdit"><i
+              class="las la-save"></i> Save Course
+            </button>
+          </div>
+        </div>
+      
+      </div>
+
+      <!-- modal search  -->
+      <div id="ModalSearch" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Search Course's name <span class="couse"></span></h2>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form">
+              <div class="form-input">
+                <label for="courseName-inputSearch">Search name: </label>
+                <input type="text" id="courseName-inputSearch"  class="input-course">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal" id="submitSearch"><i class="las la-search"></i> Search
+            </button>
+          </div>
+        </div>
+      
+      </div>
+    
+  </main>
+
+  <footer class="page-footer">
+    <p class="footer-content">&copy; <time>2022</time> TyDang</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
