@@ -1,0 +1,91 @@
+@media only screen and (max-width: 1023px) {
+
+  .menu-title, .list-title{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  
+  .page-header {
+    height: 10vh;
+  }
+  .logo {
+    font-size: 50px;
+  }
+  .header-countCourses i {
+    font-size: 40px;
+  }
+  .header-title {
+    font-size: 20px;
+  }
+  
+  .page-main {
+    height: 80vh !important;
+  }
+  .page-main .container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    
+  }
+  .page-main {
+    height: 100%;
+  }
+  .col-3 , .col-9{
+    width: 100%;
+  }
+  .main-menu {
+    height:10vh ;    
+    background-color: transparent;
+  }
+  
+  .main-list {
+    height: 70vh;
+  }
+  .btnManager {
+    display: flex;
+    width: 100%;
+  }
+  .list-title {
+    font-size: 18px;
+  }
+  .btnName {
+    padding: 5px;
+    width: 50%;
+  }
+  .menu-title {
+    display: none;
+  }
+
+  .table-wrap {
+    height: 60vh;
+  }
+  /* modal*/
+  .close {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .modal-header h2 {
+    font-size: 16px;
+  }
+
+  .form-input label {
+    font-size: 16px;
+  }
+  .form-input {
+    margin-bottom: 5px;
+  }
+  .page-footer {
+    height: 10vh;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .logo-wrap {
+    display: none;
+  }
+  .header-title-wrap {
+    width: 83.333333333%;;
+  }
+}
