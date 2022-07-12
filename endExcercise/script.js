@@ -122,6 +122,14 @@ function courseList_Load () {
     const iconNumberList = document.querySelector('.la-list span');
     let no = JSON.parse(localStorage.getItem('courseList')).length
     iconNumberList.innerHTML = no;
+    if(no===0){
+      let rowCourse= document.querySelector('tbody')
+      rowCourse.innerHTML='';
+      rowCourse.innerHTML += `<tr class="active-row">
+        <td colspan="6">Chưa có khóa học nào được thêm!</td>
+      </tr>`
+
+    }
   }
 }
 
